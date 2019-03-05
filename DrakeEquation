@@ -1,0 +1,25 @@
+#!/usr/bin/python
+print("---------------------------")
+print("Welcome to fermi's Paradox")
+print("---------------------------")
+
+#N = R * F * f * n * fl * fi * fc * L
+#R = 10
+#f = 0.005
+#n = 2
+#fl = 1
+#fi = 0.01
+#fc = 0.01
+#L = 10000
+
+R = float(input("The average rate of star formation in our galaxy: "))
+f = float(input(" the fraction of those stars that have planets: "))
+n = float(input("the average number of planets that can potentially support life per star that has planets: "))
+fl = float(input("the fraction of planets that could support life that actually develop life at some point: "))
+fi = float(input("the fraction of planets with life that actually go on to develop intelligent life (civilizations): "))
+fc = float(input(" the fraction of civilizations that develop a technology that releases detectable signs of their existence into space: "))
+L = float(input("the length of time for which such civilizations release detectable signals into space: "))
+
+
+N =  R * f * n * fl * fi * fc * L
+print(N)
