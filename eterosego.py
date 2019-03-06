@@ -1,5 +1,5 @@
-#!/usr/bin/python
-#-------kav---------xristos--------------------
+#----------------------------------------------
+# Kav and Xristos
 #----------------------------------------------
 def absolute(num):
     res = 0
@@ -8,19 +8,11 @@ def absolute(num):
             res += i
     return res
 #----------------------------------------------
-def search(num):
-    for i in range(1, num):
-        if (absolute(i) == num and absolute(num) == i):
-            return i;
+#  Main
 #----------------------------------------------
-#  ----- Main
-#----------------------------------------------
-print("-------------")
 limit = int(input("Dose ena arithmo: "))
 res = 0
 for i in range(1, limit):
-    res = search(i)
-    if(res != None):
+    res = absolute(i);
+    if (absolute(res) == i and res != i):    
         print(i, res)
-
-
